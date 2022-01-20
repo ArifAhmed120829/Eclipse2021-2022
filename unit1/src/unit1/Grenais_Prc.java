@@ -10,45 +10,56 @@ public class Grenais_Prc {
 		int i2 = 0;
 		int i3 = 0;
 		int i4 = 0;
+		
 		for(;;) {
-			int x = in.nextInt();
-			int y = in.nextInt();
-			System.out.println("novo grenal");
-			int o = in.nextInt();
 			
-			if(o==1) {
-				int s = in.nextInt();
-				int k = in.nextInt();
-				if(s>k) {
-					i1++;		
+			
+			int x = in.nextInt();//3,2,3
+			int y = in.nextInt();//2,3,1
+			System.out.println("Novo grenal (1-sim 2-nao)");
+			int ans = in.nextInt();//1,1,2
+			i4++;
+			if(ans==1) {
+				if(x>y) {
+					i1++;//1+1
 				}
-				else if(k>s) {
-					i2++;
-					
+				else if(y>x) {
+					i2++;//1
 				}
 				else {
-					i3++;
-				}	
+					i3++;//
+				}
+				
 			}
-			else if(o==2) {
+			else if(ans==2) {
+				if(x>y) {
+					i1++;//1+1
+				}
+				else if(y>x) {
+					i2++;//1+
+				}
+				else {
+					i3++;//
+				}
 				break;
 			}
-			i4++;
-			
+	
 		}
-		System.out.println("Grenais: "+i4);
-		System.out.println("Inter: "+i1);
-		System.out.println("Gremio: "+i2);
-		System.out.println("Draw: "+i3);
+		
+	
+		System.out.println(+i4+" "+"grenais");
+		System.out.println("Inter:"+i1);
+		System.out.println("Gremio:"+i2);
+		System.out.println("Empates:"+i3);
 		if(i1>i2) {
-			System.out.println("Inter wins");
+			System.out.println("Inter venceu mais");
 		}
 		else if(i2>i1) {
-			System.out.println("Gremio wins");
+			System.out.println("Gremio venceu mais");
 			
 		}
 		else if(i2==i1) {
-			System.out.println("draw");
+			System.out.println("Não houve vencedor");
 			
 		}
 		
