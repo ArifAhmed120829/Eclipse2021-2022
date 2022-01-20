@@ -14,6 +14,7 @@ public class Task_1 {
 			double y = in.nextDouble();
 			if(x==y) {
 				System.out.println("Congratulations You won");
+				System.out.println("Quit The Game");
 				break;
 			}
 			else if(x>y) {
@@ -26,6 +27,7 @@ public class Task_1 {
 			
 		}
 		System.out.println("Game Over");
+		System.out.println("Quit The Game");
 		
 		
 
