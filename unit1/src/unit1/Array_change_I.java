@@ -10,7 +10,7 @@ public class Array_change_I {
 		//Write a program that reads an array N [20].
 		int N[];
 		int temp;
-		N = new int[5];
+		N = new int[20];
 		
 		for( int i = 0; i<N.length;i++) {//0,1,2,3,4
 			N[i] = in.nextInt();//0,-5,10,63,230
