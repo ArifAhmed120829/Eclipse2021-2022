@@ -17,12 +17,6 @@ public class Array_Fill_II {
 				j=0;
 			
 		}
-			
-		
-				
-				
-		
-	
 		
 	}
 
